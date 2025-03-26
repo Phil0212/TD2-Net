@@ -1,0 +1,53 @@
+name: pytorch-1.1
+channels:
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - ca-certificates=2023.01.10=h06a4308_0
+  - certifi=2021.5.30=py36h06a4308_0
+  - cudatoolkit=10.0.130=0
+  - cudnn=7.3.1=cuda10.0_0
+  - ld_impl_linux-64=2.38=h1181459_1
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=11.2.0=h1234567_1
+  - libgomp=11.2.0=h1234567_1
+  - libstdcxx-ng=11.2.0=h1234567_1
+  - ncurses=6.4=h6a678d5_0
+  - openssl=1.1.1t=h7f8727e_0
+  - pip=21.2.2=py36h06a4308_0
+  - python=3.6.13=h12debd9_1
+  - readline=8.2=h5eee18b_0
+  - setuptools=58.0.4=py36h06a4308_0
+  - sqlite=3.41.2=h5eee18b_0
+  - tk=8.6.12=h1ccaba5_0
+  - wheel=0.37.1=pyhd3eb1b0_0
+  - xz=5.4.2=h5eee18b_0
+  - zlib=1.2.13=h5eee18b_0
+  - pip:
+    - cached-property==1.5.2
+    - cython==0.29.34
+    - dataclasses==0.8
+    - dill==0.3.4
+    - easydict==1.10
+    - h5py==3.1.0
+    - importlib-resources==5.4.0
+    - joblib==1.1.1
+    - numpy==1.19.5
+    - opencv-python==4.7.0.72
+    - pandas==1.1.5
+    - pillow==8.4.0
+    - python-dateutil==2.8.2
+    - pytorch-metric-learning==2.1.1
+    - pytz==2023.3
+    - pyyaml==6.0
+    - scikit-learn==0.24.2
+    - scipy==1.1.0
+    - six==1.16.0
+    - threadpoolctl==3.1.0
+    - torch==1.10.1
+    - torchvision==0.11.2
+    - tqdm==4.64.1
+    - typing-extensions==4.1.1
+    - zipp==3.6.0
+prefix: /opt/conda/envs/pytorch-1.1
