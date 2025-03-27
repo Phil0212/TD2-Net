@@ -1,5 +1,5 @@
 # ID<sup>2</sup>-Net: Toward Denoising and Debiasing for Dynamic Scene Graph Generation
-Pytorch Implementation of the framework **ID<sup>2</sup>-Net** proposed in our paper [Toward Denoising and Debiasing for Dynamic Scene Graph Generation](https://arxiv.org/pdf/2401.12479)
+This is an official implementation for AAAI 2024 paper ["ID<sup>2</sup>-Net:Toward Denoising and Debiasing for Dynamic Scene Graph Generation".](https://arxiv.org/pdf/2401.12479)
 
 ## Overview
 **Abstract:** Dynamic scene graph generation (SGG) focuses on detecting objects in a video and determining their pairwise relationships. Existing dynamic SGG methods usually suffer from several issues, including 1) Contextual noise, as some frames might contain occluded and blurred objects. 2) Label bias, primarily due to the high imbalance between a few positive relationship samples and numerous negative ones. Additionally, the distribution of relationships exhibits a long-tailed pattern. To address the above problems, in this paper, we introduce a network named TD$^2$-Net that aims at denoising and debiasing for dynamic SGG. Specifically, we first propose a denoising spatio-temporal transformer module that enhances object representation with robust contextual information. This is achieved by designing a differentiable Top-K object selector that utilizes the gumbel-softmax sampling strategy to select the relevant neighborhood for each object.
@@ -56,20 +56,20 @@ python train.py -mode sgdet -datasize large -log_name $LOGNAME -omega True -TopK
 
 + For PREDCLS: 
 ```
-python test.py -mode predcls -datasize large -ckpt $CKPT_PATH -TopK 8   
+python test.py -mode predcls -datasize large -ckpt $CKPT_PATH$ -TopK 8   
 ```
 
 + For SGCLS: 
 ```
-python test.py -mode sgcls -datasize large -ckpt $CKPT_PATH -TopK 8  
+python test.py -mode sgcls -datasize large -ckpt $CKPT_PATH$ -TopK 8  
 ```
 + For SGDET: 
 ```
-python test.py -mode sgdet -datasize large -ckpt $CKPT_PATH -TopK 8
+python test.py -mode sgdet -datasize large -ckpt $CKPT_PATH$ -TopK 8
 ```
 
 ## Acknowledgments 
-We would like to acknowledge the authors of the following repositories from where we borrowed some code
+We gratefully acknowledge the authors of the following repositories, from which portions of our code are adapted.
 + [Yang's repository](https://github.com/jwyang/faster-rcnn.pytorch)
 + [Zellers' repository](https://github.com/rowanz/neural-motifs) 
 + [Cong's repository](https://github.com/yrcong/STTran.git)
