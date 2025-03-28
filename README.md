@@ -6,16 +6,17 @@ This is an official implementation for AAAI 2024 paper ["TD<sup>2</sup>-Net:Towa
 
 ![GitHub Logo](/data/framework.png)
 
-## Requirements
-Please install packages in the ```environment.yml``` file.
+## Preparation
+
+### Installation
+Our codebase is built upon  PyTorch, torchvision, and a few additional dependencies. Please install the packages in the ```environment.yml``` file.
 
 ```bash
 conda env create -f environment.yml
 ```
 
-## Usage
 
-We borrow some compiled code for bbox operations.
+We follow some compiled code for bbox operations.
 
 ```
 cd lib/draw_rectangles
@@ -24,14 +25,13 @@ cd ..
 cd fpn/box_intersections_cpu
 python setup.py build_ext --inplace
 ```
-For the object detector part, please follow the compilation from https://github.com/jwyang/faster-rcnn.pytorch
-We provide a pretrained FasterRCNN model for Action Genome. Please download [here](https://drive.google.com/file/d/1-u930Pk0JYz3ivS6V_HNTM1D5AxmN5Bs/view?usp=sharing) and put it in 
+For the object detector part, please follow the compilation from [here](https://github.com/jwyang/faster-rcnn.pytorch) and download the [pre-trained model](https://drive.google.com/file/d/1-u930Pk0JYz3ivS6V_HNTM1D5AxmN5Bs/view?usp=sharing) for Action Genome dataset. Additionally, place them in
 ```
 fasterRCNN/models/faster_rcnn_ag.pth
 ```
 
-## Dataset
-We use the dataset [Action Genome](https://www.actiongenome.org/#download) to train/evaluate our method. Please process the downloaded dataset with the [Toolkit](https://github.com/JingweiJ/ActionGenome). The directories of the dataset should look like:
+### Dataset
+The Action Genome dataset can be downloaded from [here](https://www.actiongenome.org/#download) . After downloading, please process the downloaded dataset with the [Toolkit](https://github.com/JingweiJ/ActionGenome). The directories of the dataset should look like:
 ```
 |-- ag
     |-- annotations   # gt annotations
