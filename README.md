@@ -73,6 +73,20 @@ python test.py -mode sgcls -datasize large -ckpt $CKPT_PATH$ -TopK 8
 python test.py -mode sgdet -datasize large -ckpt $CKPT_PATH$ -TopK 8
 ```
 
+## Citing
+Please consider citing our paper if it helps your research.
+```bash
+@inproceedings{lin2024td2,
+  title={Td$^2$-net: Toward denoising and debiasing for video scene graph generation},
+  author={Lin, Xin and Shi, Chong and Zhan, Yibing and Yang, Zuopeng and Wu, Yaqi and Tao, Dacheng},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={4},
+  pages={3495--3503},
+  year={2024}
+}
+```
+
 ## Acknowledgments 
 We gratefully acknowledge the authors of the following repositories, from which portions of our code are adapted.
 + [Yang's repository](https://github.com/jwyang/faster-rcnn.pytorch)
